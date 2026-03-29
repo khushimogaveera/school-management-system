@@ -205,7 +205,13 @@ export default function Home ()
 
           <form className="login-card" onSubmit={handleLogin}>
             <h2>Sign In</h2>
-            <p className="login-hint">Authorized username: `khushi` and password: `12345`</p>
+            <div className="login-hint-box">
+              <p className="login-hint">Authorized credentials</p>
+              <div className="credential-pill-wrap">
+                <span className="credential-pill">Username: khushi</span>
+                <span className="credential-pill">Password: 12345</span>
+              </div>
+            </div>
 
             <label htmlFor="username">Username</label>
             <input
